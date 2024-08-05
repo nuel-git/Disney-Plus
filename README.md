@@ -1,5 +1,5 @@
 # Disney-Plus
-A simple HTML and CSS implementation of a Disney Plus website based on @ericpeters design on Figma.
+A simple HTML and CSS implementation of a Disney Plus website based on [Eric Peters](https://www.figma.com/@ericpeters ) design on Figma.
 
 # Table of Contents
 

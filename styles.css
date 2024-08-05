@@ -1,0 +1,902 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #040714;
+    color: #ffffff;
+    line-height: 1.2;
+    padding: 0%;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+  }
+
+  .disneyplus-header {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    background-image: url("./Assets/Background.png");
+    height: 100vh; 
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header-responsive-highlight {
+    display: none;
+  }
+
+  .header-login-button {
+    position: absolute;
+    border: 1px solid;
+    border-radius: 3px; 
+    padding: 13px 15px;
+    color: #f9f9f9;
+    font-size: 18px;
+    background-color: #000000;
+    opacity: 75%;
+    right: 30px;
+    top: 10px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .header-cta {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header-cta-bundle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .header-cta-bundle-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 10px;
+  }
+
+  .disneylogo {
+    margin-bottom: 10px;
+  }
+
+  .header-cta-bundle-button {
+    border: 0;
+    border-radius: 3px;
+    color: #f9f9f9;
+    background-color: #0063e5;
+    padding: 20px;
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    text-wrap: nowrap;
+    cursor: pointer;
+  }
+
+  .header-cta-highlight {
+    display: grid;
+    grid-area: 2 / -3 / -2 / -1;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .header-cta-highlight-first-text {
+    color: #c0c0c0;
+    font-size: 16px; 
+    text-align: center;
+    margin: 30px 0px 15px 0px;
+  }
+
+  .header-cta-highlight-brand-logos {
+    width: 100%;
+  }
+
+  .header-cta-highlight-second-text {
+    font-size: 12px;
+    color: #c0c0c0;
+    text-align: center;
+    text-wrap: nowrap;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .header-cta-highlight-second-text-hyperlink {
+    text-decoration: none;
+    color: #c0c0c0;
+  }
+
+  .header-cta-highlight-hyperlink {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f9f9f9;
+    text-align: center;    
+    text-wrap: nowrap;
+    margin-top: 30px;
+  }
+
+  .disneyplus-movie-album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .movie-album-nav {
+    display: flex;
+    margin: 20px 0px;
+    flex-wrap: nowrap;
+  }
+
+  .movie-album-link {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .movie-album-link:active {
+    border-bottom: 5px solid;
+  }
+
+  .movie-album-grid-wrapper {
+    gap: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .movie-album-grid-picture {
+    height: 100%;
+    width: 100%;
+  }
+
+  .movie-album-grid-picture:hover {
+    cursor: pointer;
+  }
+
+  .movie-album-grid-hyperlink {
+    text-decoration: none;
+  }
+
+  .movie-album-grid-picture-text {
+    display: none;
+    color: #c0c0c0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .disneyplus-plan {
+    padding: 80px 0px 20px 0px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .plan-text-choose {
+    font-size: 3rem;
+    margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .plan-text-switch {
+    color: #c0c0c0;
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+  }
+
+  /* The switch - the box around the slider */
+.plan-button-switch {
+  position: relative;
+  display: inline-flex;
+  width: 235.77px;
+  height: 48px;
+  align-self: center;
+}
+
+/* Hide default HTML checkbox */
+.plan-button-switch input {
+  opacity: 0;
+  width: 20px;
+  height: 0;
+}
+
+/* The slider */
+.plan-button-switch-round-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #202124;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.plan-button-switch-round-slider:before {
+  position: absolute;
+  content: "";
+  height: 38px;
+  width: 135.63px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #0063e5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .plan-button-switch-round-slider {
+  background-color: #202124;
+}
+
+input:checked + .plan-button-switch-round-slider:before {
+  -webkit-transform: translateX(135px);
+  -ms-transform: translateX(135px);
+  transform: translateX(135px);
+  width: 90px; 
+}
+
+/* Rounded sliders */
+.plan-button-switch-round-slider {
+  border-radius: 30px;
+}
+
+.plan-button-switch-round-slider:before {
+  border-radius: 34px;
+}
+
+/* switch options */
+  .plan-button-switch-first-option {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f9f9f9;
+    left: 20px;
+    bottom: 2px; 
+  }
+
+  .plan-button-switch-second-option {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 300;
+    color: #f9f9f9;
+    right: 20px;
+    bottom: 2px; 
+  }
+
+  .plan-pricing-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-pricing-option {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 30px;
+    margin: 20px 10px;
+    justify-content: space-between;
+  }
+
+  .plan-pricing-option-logo-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .plan-pricing-option-logo {
+    margin-right: 7px;
+    width: auto;
+  }
+
+  .plan-pricing-option-title {
+    margin: 20px 0px 10px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .plan-pricing-option-subtitle {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #c0c0c0;
+  }
+
+  .plan-pricing-option-features-wrapper {
+    list-style-image:url(./Assets/Checkmark\ icon.svg);
+    padding: 0px 20px;
+  }
+
+  .plan-pricing-option-features {
+    font-weight: 300;
+    font-size: 16px;
+    color: #c0c0c0;
+    line-height: 2;
+  }
+
+  .plan-pricing-option-amount {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .plan-pricing-option-amount-per-month {
+    color: #c0c0c0;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .plan-pricing-option-button {
+    border: 0px;
+    padding: 20px 0px; 
+    border-radius: 4px;
+    background-color: #0063e5;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .plan-text-effective {
+    color: #c0c0c0;
+    font-size: 12px;
+    margin: 0%;
+    display: flex;
+    align-self: center;
+  }
+
+  .plan-text-terms-apply {
+    margin: 10px 0px 0px 0px;
+    font-size: 10px;
+    color: #c0c0c0;
+    display: flex;
+    align-self: center;
+  }
+
+  .disneyplus-watchable-device {
+    padding: 80px 0px;
+    width: 85vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .watchable-device-image {
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .watchable-device-features {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .watchable-device-features-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    font-size: 2.375rem;
+    margin: 0%;
+    margin-bottom: 30px;
+    margin-right: 20px;
+  } 
+
+  .watchable-device-features-list { 
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  .watchable-device-features-list li { 
+    color: #c0c0c0; 
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .disneyplus-bundle-cta {
+    width: 85vw;
+    padding: 0px 0px 80px 0px;
+    overflow: hidden;
+  }
+
+  .bundle-cta-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bundle-cta-image {
+    width: 100%;
+    grid-area: 1 / 1 / -1 / -1;
+  }
+
+  .bundle-cta-highlight {
+    grid-area: 1/ 2/ 2/ -2;
+    display: flex;
+    flex-direction: column;
+    padding: 15% 20px;
+  }
+
+  .bundle-cta-highlight-text {
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .bundle-cta-highlight-button {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0063e5;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .bundle-cta-highlight-hyperlink {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .disneyplus-availability {
+    padding: 0px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .availability-title {
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .availability-devices-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .availability-devices-wrapper > * {
+    text-align: center;
+  }
+
+  .availability-devices {
+    display: flex;
+    flex-direction: column;   
+  }
+
+  .availability-devices-features-title {
+    font-size: 1.6875rem; 
+    font-weight: 600;
+  }
+
+  .availability-devices-features {
+    list-style-type: none;
+    padding: 0%;
+    margin-bottom: 5px;
+  }
+
+  .availability-devices-features > * {
+    color: #c0c0c0;
+    font-size: 18px; 
+    margin-bottom: 7px; 
+  } 
+
+  .disneyplus-faqs {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 100px;
+  }
+
+  .faqs-title {
+    font-size: 2.375rem;
+    font-weight: 900; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .faqs-question-list-wrapper {
+    width: 85vw;
+  }
+
+  .faqs-question-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c0c0c0;
+    background-color: #13151D;
+    padding: 25px 20px;       
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  .faqs-question {
+    font-size: 20px;
+    color: #f9f9f9;
+    margin: 0% 20px 0% 0%;   
+  }
+
+  .faqs-question-list > svg {
+    flex-shrink: 0;
+  } 
+
+  .disneyplus-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    overflow: hidden;
+  }
+
+  .footer-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 15px;
+  }
+
+  .footer-link-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .footer-link {
+    margin-right: 20px;
+    font-size: 12px;
+    color: #c0c0c0;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-link-row-text {
+    margin: 0 5px;
+  }
+
+  .footer-text-availability {
+    font-size: 12px;
+    color: #c0c0c0;
+    text-align: center; 
+  }
+
+  .footer-text-copyright {
+    font-size: 12px;
+    color: #c0c0c0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @media screen and (max-width :480px) {
+    .header-background-image {
+      width: 100vw;
+      background-position: top;
+    }
+
+    .header-responsive-highlight {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .movie-album-grid-picture-text {
+      font-size: 8px;
+    }
+
+    .faqs-question-list {
+      padding: 15px;
+    }
+
+    .faqs-question {
+      font-size: 16px;
+    }
+
+    .availability-devices svg {
+      display: flex;
+      flex-shrink: 5;     
+    }
+
+    .availability-devices-features li {
+      font-size: 16px;
+    }
+
+    .watchable-device-features-list li {
+      font-size: 16px;
+    }
+
+    .plan-pricing-option-title {
+      margin-top: 10px;
+    }
+
+    .plan-pricing-option-features {
+      line-height: 1.5;
+    }
+  }
+
+
+  @media (max-width: 799px) {
+    .movie-album-grid-wrapper {
+      column-gap: 10px;
+      row-gap: 40px;
+    }
+
+    .movie-album-nav {
+      display: flex;
+      align-self: flex-start;
+    }
+ 
+    .movie-album-link {
+      margin-right: 15px;
+    }
+
+    .movie-album-grid-picture {
+      border-radius: 5px;
+    }
+
+    .movie-album-grid-picture-text {
+      display: flex;
+    }
+
+    .disneyplus-watchable-device {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .watchable-device-image {
+      width: 100%;
+      margin-right: 0%;
+    }
+
+    .bundle-cta-highlight-text {
+      font-size: 10px;
+      }
+
+    .bundle-cta-highlight-button {
+      font-size: 8px;
+    }
+
+    .bundle-cta-highlight-hyperlink {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 930px ) {
+    .bundle-cta-highlight {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 519px ) {
+    .bundle-cta-highlight-button {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bundle-cta-highlight {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .bundle-cta-highlight {
+      padding: 5px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .bundle-cta-image {
+      display: none;
+    }
+
+    .bundle-cta-highlight {
+      grid-area: 1 / 1 / -1 / -1;
+      padding: 20px;
+    }
+
+    .bundle-cta-highlight-text {
+      font-size: 16px;
+      line-height: 1.5; 
+    }
+
+    .bundle-cta-highlight-button {
+      padding: 20px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 800px) { 
+    .header-cta-bundle-button {
+      padding: 10px;
+    }
+
+    .header-login-button {
+      display: none;
+    } 
+
+    .header-cta {
+      display: none;
+    }
+
+    .header-responsive-highlight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+
+    .header-responsive-highlight-button {
+      border: 0;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #0063e5;
+      padding: 20px;
+      width: 85%;
+      font-weight: 100;
+      font-size: 18px;
+    }
+
+    .header-responsive-highlight-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-responsive-highlight-logo {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:890px) {
+    .plan-pricing-option {
+      padding: 30px 20px;
+      width: 250px;
+    }
+
+    .trio-premium {
+      margin-top: 0%;
+    }
+
+    .plan-pricing-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width:780px) {
+    .plan-pricing-option {
+      width: 200px;
+    }
+  }
+
+  @media screen and (max-width:654px) {
+    .plan-pricing-option {
+      width: 180px;
+    }
+  }
+
+  @media screen and (max-width:604px) {
+    .trio-basic {
+      margin-top: 0%;
+    }
+
+    .plan-pricing-wrapper {
+      justify-content: center;
+    }
+
+    .plan-pricing-option {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+
+  @media (max-width:800px) {
+    .disneyplus-header {
+      height: 80vh;
+    }
+  }
+
+  @media screen and (max-width:799px) {
+    .movie-album-link {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .movie-album-link {
+      font-size: 10px;
+    }
+  }
+
+  @media (min-width:860px) and (max-width:1100px) {
+    .bundle-cta-highlight {
+      padding-top: 10px;
+    }
+  }
+
+  @media (max-width:859px) {
+    .bundle-cta-highlight-text {
+      font-size: 10px;
+      }
+  }
+
+  @media screen and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+}

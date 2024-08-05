@@ -6,7 +6,7 @@ A simple HTML and CSS implementation of a Disney Plus website based on @ericpete
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [What I learnt](#whatlearnt) 
+- [What I Learnt](#what-i-learnt) 
 - [License](#license)
 - [Contact](#contact)
 
@@ -23,6 +23,15 @@ Open the index.html file in your browser to view the site.
 - Styled using CSS Flexbox and Grid
 - Scalable Vector Graphics (SVG)
 - Cross-browser compatibility
+
+# What I Learnt
+- Responsive Design
+- Flexbox and Grid
+- CSS Pseudo elements and classes
+- Media Queries
+- CSS Positioning and Box model
+- BEM (Block Element Modifier) Class and ID Naming Convention
+- Advanced CSS
 
 
 # License

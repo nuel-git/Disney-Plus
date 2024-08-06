@@ -752,7 +752,7 @@ input:checked + .plan-button-switch-round-slider:before {
     }
 
     .bundle-cta-highlight-text {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.5; 
     }
 
@@ -882,6 +882,13 @@ input:checked + .plan-button-switch-round-slider:before {
   @media (max-width:859px) {
     .bundle-cta-highlight-text {
       font-size: 10px;
+      }
+  }
+
+  @media (max-width: 400px) {
+      .bundle-cta-highlight-text {
+      font-size: 16px;
+      line-height: 1.5;
       }
   }
 

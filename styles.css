@@ -793,7 +793,7 @@ input:checked + .plan-button-switch-round-slider:before {
       color: #fff;
       background-color: #0063e5;
       padding: 20px;
-      width: 95%;
+      width: 90%;
       font-weight: 300;
       font-size: 18px;
     }

@@ -793,8 +793,8 @@ input:checked + .plan-button-switch-round-slider:before {
       color: #fff;
       background-color: #0063e5;
       padding: 20px;
-      width: 85%;
-      font-weight: 100;
+      width: 95%;
+      font-weight: 300;
       font-size: 18px;
     }
 
@@ -855,7 +855,7 @@ input:checked + .plan-button-switch-round-slider:before {
 
   @media (max-width:800px) {
     .disneyplus-header {
-      height: 80vh;
+      height: 100vh;
     }
   }
 

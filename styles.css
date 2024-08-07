@@ -281,7 +281,7 @@ input:checked + .plan-button-switch-round-slider:before {
     font-weight: 300;
     color: #f9f9f9;
     left: 20px;
-    bottom: 2px; 
+    bottom: 14px; 
   }
 
   .plan-button-switch-second-option {
@@ -290,7 +290,7 @@ input:checked + .plan-button-switch-round-slider:before {
     font-weight: 300;
     color: #f9f9f9;
     right: 20px;
-    bottom: 2px; 
+    bottom: 14px; 
   }
 
   .plan-pricing-wrapper {
